@@ -25,7 +25,18 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
+      <img src="../../assets/images/fl.svg" class="fl_back animation_opactiy" v-else>
     </nav>
+    <div class="shop_list_container">
+      <header class="shop_header">
+        <svg class="shop_icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shop"></use>
+        </svg>
+        <span class="shop_header_title">附近商家</span>
+      </header>
+      <shop-list v-if="hasGetData" :geohash="geohash"></shop-list>
+    </div>
+    <foot-guide></foot-guide>
   </div>
 </template>
 
@@ -34,7 +45,9 @@
   import Swiper from 'swiper';
   import 'swiper/dist/css/swiper.min.css';
   import headTop from '@/components/header/header';
+  import footGuide from '@/components/footer/footer';
   import {msiteAddress, msiteFoodTypes, cityGuess} from "@/server/getData";
+  import shopList from '@/components/common/shoplist';
 
   export default {
     name: "msite",
@@ -48,7 +61,7 @@
       }
     },
     components:{
-      headTop
+      headTop,shopList,footGuide
     },
     async beforeMount(){
       if(!this.$route.query.geohash){
