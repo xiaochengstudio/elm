@@ -1,6 +1,6 @@
 <template>
   <div>
-      <head-top>
+      <head-top signin-up='home'>
         <span slot='logo' class="head_logo" >ele.me</span>
       </head-top>
       <nav class="city_nav">
@@ -40,8 +40,8 @@
   </div>
 </template>
 <script>
-  import headTop from '../../components/header/header'
-  import {cityGuess, hotcity,groupcity} from "../../server/getData";
+  import headTop from '@/components/header/header'
+  import {cityGuess, hotcity,groupcity} from "@/server/getData";
 
   export default {
     data(){

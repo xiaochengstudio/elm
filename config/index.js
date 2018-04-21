@@ -12,7 +12,10 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/v1/cities':{
-        target:'http://cangdu.org:8001/',
+        target:'http://cangdu.org:8001/'
+      },
+      '/v1/pois':{
+        target:'http://cangdu.org:8001/'
       }
     },
     // context: [ //代理路径
