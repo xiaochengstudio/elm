@@ -16,23 +16,14 @@ module.exports = {
       },
       '/v1/pois':{
         target:'http://cangdu.org:8001/'
+      },
+      '/v2/pois/':{
+        target:'http://cangdu.org:8001/'
+      },
+      '/v2/index_entry':{
+        target:'http://cangdu.org:8001/'
       }
     },
-    // context: [ //代理路径
-    //   '/shopping',
-    //   '/ugc',
-    //   '/v1',
-    //   '/v2',
-    //   '/v3',
-    //   '/v4',
-    //   '/bos',
-    //   '/member',
-    //   '/promotion',
-    //   '/eus',
-    //   '/payapi',
-    //   '/img',
-    // ],
-    // proxypath: 'http://cangdu.org:8001',
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
