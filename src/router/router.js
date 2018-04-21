@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import {routerMode} from './../config/env'
 
 const home = r => require.ensure([], () => r(require('../pages/home/home')), 'home')
 
@@ -14,5 +15,7 @@ export default new Router({
       path:'/home',
       component:home
     }
-  ]
+  ],
+  mode:routerMode,
+  strict: process.env.NODE_ENV !== 'production'
 })
