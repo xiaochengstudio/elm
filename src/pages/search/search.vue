@@ -57,7 +57,7 @@
 <script>
   import headTop from '@/components/header/head';
   import footGuide from '@/components/footer/footer';
-  import {searchRestaurant} from "@/server/getData";
+  import {searchRestaurant} from "@/service/getData";
   import {imgBaseUrl} from '@/config/env';
   import {getStore, setStore} from '@/config/mUtils';
 

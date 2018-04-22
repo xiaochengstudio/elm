@@ -25,7 +25,7 @@
 
 <script>
     import headTop from '@/components/header/head';
-    import {currentcity,searchplace} from "@/server/getData";
+    import {currentcity,searchplace} from "@/service/getData";
     import {getStore, setStore, removeStore} from '@/config/mUtils'
 
     export default {

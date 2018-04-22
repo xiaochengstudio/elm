@@ -65,7 +65,7 @@
 
 <script>
   import {mapState} from 'vuex'
-  import {shopList} from "../../server/getData";
+  import {shopList} from "../../service/getData";
   import {imgBaseUrl} from "../../config/env";
   import {loadMore, getImgPath} from './mixin';
   import {showBack , animate} from '@/config/mUtils';

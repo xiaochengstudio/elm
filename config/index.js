@@ -3,7 +3,7 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 
 const path = require('path')
-
+const DATA_PATH = 'http://cangdu.org:8001/'
 module.exports = {
   dev: {
 
@@ -12,22 +12,31 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/v1/cities':{
-        target:'http://cangdu.org:8001/'
+        target:DATA_PATH
       },
       '/v1/pois':{
-        target:'http://cangdu.org:8001/'
+        target:DATA_PATH
       },
       '/v2/pois/':{
-        target:'http://cangdu.org:8001/'
+        target:DATA_PATH
       },
       '/v2/index_entry':{
-        target:'http://cangdu.org:8001/'
+        target:DATA_PATH
       },
       '/shopping/restaurants':{
-        target:'http://cangdu.org:8001/'
+        target:DATA_PATH
       },
       '/v4/restaurants':{
-        target:'http://cangdu.org:8001/'
+        target:DATA_PATH
+      },
+      '/shopping/restaurant/':{
+        target:DATA_PATH
+      },
+      '/shopping/v2/menu':{
+        target:DATA_PATH
+      },
+      '/ugc/v2/restaurants/':{
+        target:DATA_PATH
       }
     },
     // Various Dev Server settings

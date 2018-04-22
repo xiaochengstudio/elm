@@ -46,7 +46,7 @@
   import 'swiper/dist/css/swiper.min.css';
   import headTop from '@/components/header/head';
   import footGuide from '@/components/footer/footer';
-  import {msiteAddress, msiteFoodTypes, cityGuess} from "@/server/getData";
+  import {msiteAddress, msiteFoodTypes, cityGuess} from "@/service/getData";
   import shopList from '@/components/common/shoplist';
 
   export default {
