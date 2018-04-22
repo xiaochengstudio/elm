@@ -22,6 +22,9 @@ module.exports = {
       },
       '/v2/index_entry':{
         target:'http://cangdu.org:8001/'
+      },
+      '/shopping/restaurants':{
+        target:'http://cangdu.org:8001/'
       }
     },
     // Various Dev Server settings
