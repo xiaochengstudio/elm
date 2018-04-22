@@ -40,7 +40,7 @@
   </div>
 </template>
 <script>
-  import headTop from '@/components/header/header'
+  import headTop from '@/components/header/head'
   import {cityGuess, hotcity,groupcity} from "@/server/getData";
 
   export default {

@@ -5,7 +5,8 @@ import {routerMode} from '@/config/env'
 const home = r => require.ensure([], () => r(require('@/pages/home/home')), 'home')
 const city = r => require.ensure([], () => r(require('@/pages/city/city')), 'city')
 const msite = r => require.ensure([], () => r(require('@/pages/msite/msite')), 'msite')
-
+const search = r => require.ensure([], () => r(require('@/pages/search/search')), 'search')
+const shop = r => require.ensure([], () => r(require('@/pages/shop/shop')), 'shop')
 
 Vue.use(Router)
 
@@ -24,6 +25,12 @@ export default new Router({
       path:'/msite',
       component:msite,
       meta: { keepAlive: true }
+    },{
+      path:'/search/:geohash',
+      component:search
+    },{
+      path:'/shop',
+      component:shop
     }
   ],
   mode:routerMode,

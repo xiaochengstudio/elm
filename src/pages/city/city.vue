@@ -24,7 +24,7 @@
 </template>
 
 <script>
-    import headTop from '@/components/header/header';
+    import headTop from '@/components/header/head';
     import {currentcity,searchplace} from "@/server/getData";
     import {getStore, setStore, removeStore} from '@/config/mUtils'
 
