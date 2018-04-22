@@ -7,6 +7,7 @@ const city = r => require.ensure([], () => r(require('@/pages/city/city')), 'cit
 const msite = r => require.ensure([], () => r(require('@/pages/msite/msite')), 'msite')
 const search = r => require.ensure([], () => r(require('@/pages/search/search')), 'search')
 const shop = r => require.ensure([], () => r(require('@/pages/shop/shop')), 'shop')
+const login = r => require.ensure([], () => r(require('@/pages/login/login')), 'login')
 
 Vue.use(Router)
 
@@ -31,6 +32,9 @@ export default new Router({
     },{
       path:'/shop',
       component:shop
+    },{
+      path:'/login',
+      component:login
     }
   ],
   mode:routerMode,

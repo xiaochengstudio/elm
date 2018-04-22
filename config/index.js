@@ -37,6 +37,24 @@ module.exports = {
       },
       '/ugc/v2/restaurants/':{
         target:DATA_PATH
+      },
+      '/v4/mobile/verify_code/send':{
+        target:DATA_PATH
+      },
+      '/v1/captchas':{
+        target:DATA_PATH
+      },
+      '/v1/users/exists':{
+        target:DATA_PATH
+      },
+      '/v1/mobile/verify_code/send':{
+        target:DATA_PATH
+      },
+      '/v2/login':{
+        target:DATA_PATH
+      },
+      '/v1/user':{
+        target:DATA_PATH
       }
     },
     // Various Dev Server settings
